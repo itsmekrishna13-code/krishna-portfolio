@@ -235,6 +235,12 @@
   .c-ic svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .c-num{font-family:'JetBrains Mono';font-size:.7rem;color:var(--muted)}
   .cert-card b{font-family:'Space Grotesk';font-size:.95rem;line-height:1.4;font-weight:600}
+  .cert-card a{color:var(--pc);text-decoration:none;border-bottom:1px dashed var(--pc);transition:opacity .2s}
+  .cert-card a:hover{opacity:.8}
+  .cert-link{display:block;font-size:.78rem;color:var(--muted);margin-top:4px;font-family:'JetBrains Mono';letter-spacing:.5px}
+  .c-ext{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;color:var(--muted);transition:.25s}
+  .c-ext svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .c-ext:hover{color:var(--text);transform:translate(2px,-2px)}
 
   /* ---------- projects ---------- */
   .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px;perspective:1200px}
@@ -589,8 +595,8 @@
       </div>
 
       <div class="cert-card acc-green rv d2">
-        <div class="c-top"><span class="c-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span><span class="c-num">07</span></div>
-        <b>AI Skills Passport</b>
+        <div class="c-top"><span class="c-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span><a class="c-ext" href="https://www.credly.com/badges/7df2d2be-1f15-4507-a6b2-9e05612e7234/public_url" target="_blank" rel="noopener" aria-label="AI Skills Passport on Credly"><svg viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+        <a href="https://www.credly.com/badges/7df2d2be-1f15-4507-a6b2-9e05612e7234/public_url" target="_blank" rel="noopener"><b>AI Skills Passport</b><span class="cert-link">Verify →</span></a>
       </div>
 
       <div class="cert-card acc-amber rv d3">
